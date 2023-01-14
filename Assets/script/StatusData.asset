@@ -12,96 +12,119 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9f67d6a46a5d84ebab59b3d72f0035, type: 3}
   m_Name: StatusData
   m_EditorClassIdentifier: 
-  _Contre:
+  _contry:
   - _name: "\u7E54\u7530"
-    _colorcode: FFACAC
+    _colorcode: 
     _manpower: 0
     _Economy: 0
-  - _name: "\u4ECA\u5DDD"
-    _colorcode: D4FF53
-    _manpower: 0
-    _Economy: 0
-  - _name: "\u658E\u85E4"
-    _colorcode: A8A8A8
-    _manpower: 0
-    _Economy: 0
-  - _name: "\u6B66\u7530"
-    _colorcode: 3A9EFA
-    _manpower: 0
-    _Economy: 0
-  - _name: "\u5317\u6761"
-    _colorcode: D375FB
-    _manpower: 0
-    _Economy: 0
-  - _name: "\u4F50\u7AF9"
-    _colorcode: FFA500
-    _manpower: 0
-    _Economy: 0
-  - _name: "\u4E0A\u6749"
-    _colorcode: 215CFF
-    _manpower: 0
-    _Economy: 0
+    _food: 0
   - _name: "\u5357\u90E8"
-    _colorcode: 00A2FF
+    _colorcode: 
     _manpower: 0
     _Economy: 0
+    _food: 0
   - _name: "\u4F0A\u9054"
-    _colorcode: 7E4E00
+    _colorcode: 
     _manpower: 0
     _Economy: 0
+    _food: 0
   - _name: "\u6700\u4E0A"
-    _colorcode: 55F8FF
+    _colorcode: 
     _manpower: 0
     _Economy: 0
-  - _name: "\u7560\u5C71"
-    _colorcode: FF6800
+    _food: 0
+  - _name: "\u4E0A\u6749"
+    _colorcode: 
     _manpower: 0
     _Economy: 0
+    _food: 0
+  - _name: "\u4F50\u7AF9"
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
+  - _name: "\u5317\u6761"
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
+  - _name: "\u6B66\u7530"
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
+  - _name: 
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
+  - _name: "\u4ECA\u5DDD"
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
+  - _name: "\u658E\u85E4"
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
   - _name: "\u671D\u5009"
-    _colorcode: 735F04
+    _colorcode: 
     _manpower: 0
     _Economy: 0
+    _food: 0
   - _name: "\u6D45\u4E95"
-    _colorcode: 216F07
+    _colorcode: 
     _manpower: 0
     _Economy: 0
+    _food: 0
   - _name: "\u516D\u89D2"
-    _colorcode: FFCD00
+    _colorcode: 
     _manpower: 0
     _Economy: 0
-  - _name: "\u677E\u6C38"
-    _colorcode: FF8FF0
-    _manpower: 0
-    _Economy: 0
-  - _name: "\u4E09\u597D"
-    _colorcode: 2557FF
-    _manpower: 0
-    _Economy: 0
-  - _name: "\u9577\u5B97\u6211\u90E8"
-    _colorcode: AC00FF
-    _manpower: 0
-    _Economy: 0
-  - _name: "\u5927\u53CB"
-    _colorcode: FF7474
-    _manpower: 0
-    _Economy: 0
-  - _name: "\u5CF6\u6D25"
-    _colorcode: 85FDC9
-    _manpower: 0
-    _Economy: 0
-  - _name: "\u6BDB\u5229"
-    _colorcode: FFEA00
-    _manpower: 0
-    _Economy: 0
+    _food: 0
   - _name: "\u5317\u7560"
-    _colorcode: 00EEFF
+    _colorcode: 
     _manpower: 0
     _Economy: 0
-  - _name: "\u5C3C\u5B50"
-    _colorcode: 846D4A
-    _manpower: 0
-    _Economy: 0
+    _food: 0
   - _name: "\u8DB3\u5229"
-    _colorcode: FF1B1B
+    _colorcode: 
     _manpower: 0
     _Economy: 0
+    _food: 0
+  - _name: "\u677E\u6C38"
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
+  - _name: "\u4E09\u597D"
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
+  - _name: "\u9577\u5B97\u6211\u90E8"
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
+  - _name: "\u5C3C\u5B50"
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
+  - _name: "\u6BDB\u5229"
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
+  - _name: "\u5927\u53CB"
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
+  - _name: "\u5CF6\u6D25"
+    _colorcode: 
+    _manpower: 0
+    _Economy: 0
+    _food: 0
