@@ -14,117 +14,117 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _contry:
   - _name: "\u7E54\u7530"
-    _colorcode: 
+    _colorcode: FFACAC
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u5357\u90E8"
-    _colorcode: 
+    _colorcode: 00A2FF
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u4F0A\u9054"
-    _colorcode: 
+    _colorcode: 7E4E00
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u6700\u4E0A"
-    _colorcode: 
+    _colorcode: 55F8FF
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u4E0A\u6749"
-    _colorcode: 
+    _colorcode: 215CFF
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u4F50\u7AF9"
-    _colorcode: 
+    _colorcode: FFA500
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u5317\u6761"
-    _colorcode: 
+    _colorcode: D375FB
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u6B66\u7530"
-    _colorcode: 
+    _colorcode: 3A9EFA
     _manpower: 0
     _Economy: 0
     _food: 0
-  - _name: 
-    _colorcode: 
+  - _name: "\u7560\u5C71"
+    _colorcode: FF6800
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u4ECA\u5DDD"
-    _colorcode: 
+    _colorcode: D4FF53
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u658E\u85E4"
-    _colorcode: 
+    _colorcode: A8A8A8
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u671D\u5009"
-    _colorcode: 
+    _colorcode: 746004
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u6D45\u4E95"
-    _colorcode: 
+    _colorcode: 746004
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u516D\u89D2"
-    _colorcode: 
+    _colorcode: 216F07
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u5317\u7560"
-    _colorcode: 
+    _colorcode: 00EEFF
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u8DB3\u5229"
-    _colorcode: 
+    _colorcode: FF1B1B
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u677E\u6C38"
-    _colorcode: 
+    _colorcode: FF8FF0
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u4E09\u597D"
-    _colorcode: 
+    _colorcode: 2557FF
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u9577\u5B97\u6211\u90E8"
-    _colorcode: 
+    _colorcode: AC00FF
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u5C3C\u5B50"
-    _colorcode: 
+    _colorcode: 846D4A
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u6BDB\u5229"
-    _colorcode: 
+    _colorcode: FFEA00
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u5927\u53CB"
-    _colorcode: 
+    _colorcode: FF7474
     _manpower: 0
     _Economy: 0
     _food: 0
   - _name: "\u5CF6\u6D25"
-    _colorcode: 
+    _colorcode: 84FDC9
     _manpower: 0
     _Economy: 0
     _food: 0
