@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TileMN : MonoBehaviour
 {
+    public static GameObject _TileMnObj;
+
     [SerializeField]  Country _county;
 
     [SerializeField] List<TilePower> oda = new();
@@ -31,18 +33,29 @@ public class TileMN : MonoBehaviour
     [SerializeField] List<TilePower> asikaga = new();
 
     private List<TilePower> SelectContry;
+
+    public static GameObject SelectTile;
+    public List<GameObject> _PlyertileUI;
+    private void Awake()
+    {
+        _TileMnObj = this.gameObject;
+    }
     public void Start()
     {
         for (int i = 0; i<23; i++)
         {
+            //国のステータスのリセット用
             _county.Contry[i].ManpowerChage(9999);
             _county.Contry[i].EconomyChage(9999);
             _county.Contry[i].FoodChage(9999);
-            //国のステータスのリセット用
             switch (i)
             {
                 case 0:
                     SelectContry = oda;
+                    foreach (var item in oda)
+                    {
+                        item._playerTile = true;
+                    }
                     break;
                 case 1:
                     SelectContry = nannbu;
@@ -117,7 +130,15 @@ public class TileMN : MonoBehaviour
                 _county.Contry[i].EconomyChage(item.Economy);
                 _county.Contry[i].FoodChage(item.Food);
             }
+        }//国のステータスをいれる
+    }
+
+    public void TilePlay(bool Player)
+    {
+        if(Player ==true)
+        {
+            _PlyertileUI.ForEach(x => x.gameObject.SetActive(true));
         }
     }
-    
 }
+

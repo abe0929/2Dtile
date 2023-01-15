@@ -15,116 +15,116 @@ MonoBehaviour:
   _contry:
   - _name: "\u7E54\u7530"
     _colorcode: FFACAC
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 4
+    _Economy: 4
+    _food: 4
   - _name: "\u5357\u90E8"
     _colorcode: 00A2FF
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 32
+    _Economy: 32
+    _food: 32
   - _name: "\u4F0A\u9054"
     _colorcode: 7E4E00
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 18
+    _Economy: 18
+    _food: 18
   - _name: "\u6700\u4E0A"
     _colorcode: 55F8FF
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 15
+    _Economy: 15
+    _food: 15
   - _name: "\u4E0A\u6749"
     _colorcode: 215CFF
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 16
+    _Economy: 16
+    _food: 16
   - _name: "\u4F50\u7AF9"
     _colorcode: FFA500
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 6
+    _Economy: 6
+    _food: 6
   - _name: "\u5317\u6761"
     _colorcode: D375FB
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 15
+    _Economy: 15
+    _food: 15
   - _name: "\u6B66\u7530"
     _colorcode: 3A9EFA
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 19
+    _Economy: 19
+    _food: 19
   - _name: "\u7560\u5C71"
     _colorcode: FF6800
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 10
+    _Economy: 10
+    _food: 10
   - _name: "\u4ECA\u5DDD"
     _colorcode: D4FF53
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 12
+    _Economy: 12
+    _food: 12
   - _name: "\u658E\u85E4"
     _colorcode: A8A8A8
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 11
+    _Economy: 11
+    _food: 11
   - _name: "\u671D\u5009"
     _colorcode: 746004
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 5
+    _Economy: 5
+    _food: 5
   - _name: "\u6D45\u4E95"
     _colorcode: 746004
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 3
+    _Economy: 3
+    _food: 3
   - _name: "\u516D\u89D2"
     _colorcode: 216F07
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 3
+    _Economy: 3
+    _food: 3
   - _name: "\u5317\u7560"
     _colorcode: 00EEFF
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 4
+    _Economy: 4
+    _food: 4
   - _name: "\u8DB3\u5229"
     _colorcode: FF1B1B
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 7
+    _Economy: 10
+    _food: 3
   - _name: "\u677E\u6C38"
     _colorcode: FF8FF0
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 6
+    _Economy: 6
+    _food: 6
   - _name: "\u4E09\u597D"
     _colorcode: 2557FF
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 11
+    _Economy: 11
+    _food: 11
   - _name: "\u9577\u5B97\u6211\u90E8"
     _colorcode: AC00FF
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 12
+    _Economy: 12
+    _food: 12
   - _name: "\u5C3C\u5B50"
     _colorcode: 846D4A
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 14
+    _Economy: 14
+    _food: 14
   - _name: "\u6BDB\u5229"
     _colorcode: FFEA00
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 26
+    _Economy: 26
+    _food: 26
   - _name: "\u5927\u53CB"
     _colorcode: FF7474
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 24
+    _Economy: 24
+    _food: 24
   - _name: "\u5CF6\u6D25"
     _colorcode: 84FDC9
-    _manpower: 0
-    _Economy: 0
-    _food: 0
+    _manpower: 15
+    _Economy: 15
+    _food: 15

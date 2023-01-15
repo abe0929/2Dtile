@@ -8,7 +8,7 @@ public class TilePower : MonoBehaviour
     public int Economy => _economy;
     public int Food => _food;
 
-    public int food => _food;
+    public bool _playerTile = false;
     
     [SerializeField]
     public int _manpower = 1;
@@ -16,4 +16,9 @@ public class TilePower : MonoBehaviour
     private int _economy = 1;
     [SerializeField]
     private int _food = 1;
+
+    public void ClickTile()
+    {
+        TileMN._TileMnObj.GetComponent<TileMN>().TilePlay(_playerTile);
+    }
 }
