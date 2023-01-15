@@ -30,15 +30,94 @@ public class TileMN : MonoBehaviour
     [SerializeField] List<TilePower> amako = new();
     [SerializeField] List<TilePower> asikaga = new();
 
+    private List<TilePower> SelectContry;
     public void Start()
     {
-       
-        int asikagaManpower = 0;
-        foreach (var item in oda)
+        for (int i = 0; i<23; i++)
         {
-             asikagaManpower += item.ManPower;
-            _county.Contry[0].PowerChage(item.ManPower);
-
+            _county.Contry[i].ManpowerChage(9999);
+            _county.Contry[i].EconomyChage(9999);
+            _county.Contry[i].FoodChage(9999);
+            //国のステータスのリセット用
+            switch (i)
+            {
+                case 0:
+                    SelectContry = oda;
+                    break;
+                case 1:
+                    SelectContry = nannbu;
+                    break;
+                case 2:
+                    SelectContry = date;
+                    break;
+                case 3:
+                    SelectContry = mogami;
+                    break;
+                case 4:
+                    SelectContry = uesugi;
+                    break;
+                case 5:
+                    SelectContry = satake;
+                    break;
+                case 6:
+                    SelectContry = houzyou;
+                    break;
+                case 7:
+                    SelectContry = takeda;
+                    break;
+                case 8:
+                    SelectContry = hatakeyama;
+                    break;
+                case 9:
+                    SelectContry = imagawa;
+                    break;
+                case 10:
+                    SelectContry = saitou;
+                    break;
+                case 11:
+                    SelectContry = asakura;
+                    break;
+                case 12:
+                    SelectContry = asai;
+                    break;
+                case 13:
+                    SelectContry = rokkaku;
+                    break;
+                case 14:
+                    SelectContry = kitabatake;
+                    break;
+                case 15:
+                    SelectContry = asikaga;
+                    break;
+                case 16:
+                    SelectContry = matunaga;
+                    break;
+                case 17:
+                    SelectContry = miyosi;
+                    break;
+                case 18:
+                    SelectContry = tyousokabe;
+                    break;
+                case 19:
+                    SelectContry = amako;
+                    break;
+                case 20:
+                    SelectContry = mouri;
+                    break;
+                case 21:
+                    SelectContry = ootomo;
+                    break;
+                case 22:
+                    SelectContry = simazu;
+                    break;
+            }
+            foreach (var item in SelectContry)
+            {
+                _county.Contry[i].ManpowerChage(item.ManPower);
+                _county.Contry[i].EconomyChage(item.Economy);
+                _county.Contry[i].FoodChage(item.Food);
+            }
         }
     }
+    
 }

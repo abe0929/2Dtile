@@ -6,6 +6,7 @@ public class TilePower : MonoBehaviour
 {
     public int ManPower => _manpower;
     public int Economy => _economy;
+    public int Food => _food;
 
     public int food => _food;
     

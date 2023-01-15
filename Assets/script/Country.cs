@@ -34,16 +34,42 @@ public class status
     [SerializeField]
     int _food = 0;
 
+    
     public string NameChange(string name)
     {
         _name = name;
         return _name;
     }
 
-    public int PowerChage(int power)
+    public int ManpowerChage(int power)
     {
+        if(power == 9999)
+        {
+            _manpower = 0;
+        }
+        else
         _manpower += power;
         return _manpower;
+    }
+    public int EconomyChage(int power)
+    {
+        if (power == 9999)
+        {
+            _Economy = 0;
+        }
+        else
+            _Economy += power;
+        return _Economy;
+    }
+    public int FoodChage(int power)
+    {
+        if (power == 9999)
+        {
+            _food = 0;
+        }
+        else
+            _food += power;
+        return _food;
     }
 
 }
