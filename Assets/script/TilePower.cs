@@ -9,6 +9,8 @@ public class TilePower : MonoBehaviour,IPointerClickHandler
     public int Food => _food;
 
     public bool _playerTile = false;
+
+    public int _contryID;
     
     [SerializeField]
     public int _manpower = 1;
@@ -19,7 +21,8 @@ public class TilePower : MonoBehaviour,IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        TileMN._TileMnObj.GetComponent<TileMN>().TilePlay(_playerTile, _manpower,_economy,_food);
+        TileMN._TileMnObj.GetComponent<TileMN>().TilePlay(_playerTile, _contryID, _manpower,_economy,_food);
+        TileMN.SelectTile = this.gameObject;
     }
     
 }

@@ -42,6 +42,8 @@ public class TileMN : MonoBehaviour
     [SerializeField] List<Text> _tileKaihatudo;
 
     [SerializeField] GameObject _nextButton;
+
+    private string _tileContryName;
     private void Awake()
     {
         _TileMnObj = this.gameObject;
@@ -135,11 +137,12 @@ public class TileMN : MonoBehaviour
                 _county.Contry[i].ManpowerChage(item.ManPower);
                 _county.Contry[i].EconomyChage(item.Economy);
                 _county.Contry[i].FoodChage(item.Food);
+                item._contryID = i;
             }
         }//国のステータスをいれる
     }
 
-    public void TilePlay(bool Player, int tileManpower, int tileeconomy, int tileFood)
+    public void TilePlay(bool Player,int contryID, int tileManpower, int tileeconomy, int tileFood)
     {
         if(Player ==true)
         {
@@ -150,10 +153,12 @@ public class TileMN : MonoBehaviour
         {
             _PlyertileUI.ForEach(x => x.gameObject.SetActive(false));
         }
+        _tileContryName = _county.Contry[contryID].Name;
         _tileStetasImage.SetActive(true);
         _tileKaihatudo[0].text = "人口は"+tileManpower;
         _tileKaihatudo[1].text = "経済力は" + tileeconomy;
         _tileKaihatudo[2].text = "食料生産数は" + tileFood;
+        _tileKaihatudo[3].text = _tileContryName;
         _nextButton.SetActive(false);
     }
 }
