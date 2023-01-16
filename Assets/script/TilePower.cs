@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class TilePower : MonoBehaviour
+using UnityEngine.EventSystems;
+public class TilePower : MonoBehaviour,IPointerClickHandler
 {
     public int ManPower => _manpower;
     public int Economy => _economy;
@@ -17,8 +17,9 @@ public class TilePower : MonoBehaviour
     [SerializeField]
     private int _food = 1;
 
-    public void ClickTile()
+    public void OnPointerClick(PointerEventData eventData)
     {
-        TileMN._TileMnObj.GetComponent<TileMN>().TilePlay(_playerTile);
+        TileMN._TileMnObj.GetComponent<TileMN>().TilePlay(_playerTile, _manpower,_economy,_food);
     }
+    
 }

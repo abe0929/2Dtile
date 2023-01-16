@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TileMN : MonoBehaviour
 {
@@ -36,6 +37,11 @@ public class TileMN : MonoBehaviour
 
     public static GameObject SelectTile;
     public List<GameObject> _PlyertileUI;
+
+    [SerializeField] GameObject _tileStetasImage;
+    [SerializeField] List<Text> _tileKaihatudo;
+
+    [SerializeField] GameObject _nextButton;
     private void Awake()
     {
         _TileMnObj = this.gameObject;
@@ -133,12 +139,22 @@ public class TileMN : MonoBehaviour
         }//国のステータスをいれる
     }
 
-    public void TilePlay(bool Player)
+    public void TilePlay(bool Player, int tileManpower, int tileeconomy, int tileFood)
     {
         if(Player ==true)
         {
             _PlyertileUI.ForEach(x => x.gameObject.SetActive(true));
+            Debug.Log("プレイヤータイルが押された");
+        }else
+            if(Player == false)
+        {
+            _PlyertileUI.ForEach(x => x.gameObject.SetActive(false));
         }
+        _tileStetasImage.SetActive(true);
+        _tileKaihatudo[0].text = "人口は"+tileManpower;
+        _tileKaihatudo[1].text = "経済力は" + tileeconomy;
+        _tileKaihatudo[2].text = "食料生産数は" + tileFood;
+        _nextButton.SetActive(false);
     }
 }
 
