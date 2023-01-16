@@ -39,9 +39,11 @@ public class TileMN : MonoBehaviour
     public List<GameObject> _PlyertileUI;
 
     [SerializeField] GameObject _tileStetasImage;
-    [SerializeField] List<Text> _tileKaihatudo;
+    [SerializeField] List<Text> _tileMeny;
 
+    //ボタン
     [SerializeField] GameObject _nextButton;
+    [SerializeField] GameObject _closeTileStetasButton;
 
     private string _tileContryName;
     private void Awake()
@@ -155,11 +157,15 @@ public class TileMN : MonoBehaviour
         }
         _tileContryName = _county.Contry[contryID].Name;
         _tileStetasImage.SetActive(true);
-        _tileKaihatudo[0].text = "人口は"+tileManpower;
-        _tileKaihatudo[1].text = "経済力は" + tileeconomy;
-        _tileKaihatudo[2].text = "食料生産数は" + tileFood;
-        _tileKaihatudo[3].text = _tileContryName;
+        _tileMeny[0].text = "人口は"+tileManpower;
+        _tileMeny[1].text = "経済力は" + tileeconomy;
+        _tileMeny[2].text = "食料生産数は" + tileFood;
+        _tileMeny[3].text = _tileContryName;
         _nextButton.SetActive(false);
+    }
+    public void CloseTileStetas()
+    {
+        _tileStetasImage.SetActive(false);
     }
 }
 
