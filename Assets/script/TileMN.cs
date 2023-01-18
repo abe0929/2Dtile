@@ -40,7 +40,7 @@ public class TileMN : MonoBehaviour
 
     [SerializeField] GameObject _tileStetasImage;
     [SerializeField] List<Text> _tileMeny;
-
+    [SerializeField] Image _contryFlag;
     //ボタン
     [SerializeField] GameObject _nextButton;
     [SerializeField] GameObject _closeTileStetasButton;
@@ -49,6 +49,7 @@ public class TileMN : MonoBehaviour
     private void Awake()
     {
         _TileMnObj = this.gameObject;
+        //_contryFlagRender = _contryFlag.GetComponent<SpriteRenderer>();
     }
     public void Start()
     {
@@ -132,7 +133,7 @@ public class TileMN : MonoBehaviour
                     break;
                 case 22:
                     SelectContry = simazu;
-                    break;
+                                      break;
             }
             foreach (var item in SelectContry)
             {
@@ -146,7 +147,7 @@ public class TileMN : MonoBehaviour
 
     public void TilePlay(bool Player,int contryID, int tileManpower, int tileeconomy, int tileFood)
     {
-        if(Player ==true)
+        if(Player == true)
         {
             _PlyertileUI.ForEach(x => x.gameObject.SetActive(true));
             Debug.Log("プレイヤータイルが押された");
@@ -156,12 +157,16 @@ public class TileMN : MonoBehaviour
             _PlyertileUI.ForEach(x => x.gameObject.SetActive(false));
         }
         _tileContryName = _county.Contry[contryID].Name;
+        _contryFlag.sprite = _county.Contry[contryID].CountyrCrest;
         _tileStetasImage.SetActive(true);
         _tileMeny[0].text = "人口は"+tileManpower;
         _tileMeny[1].text = "経済力は" + tileeconomy;
         _tileMeny[2].text = "食料生産数は" + tileFood;
         _tileMeny[3].text = _tileContryName;
         _nextButton.SetActive(false);
+
+        
+
     }
     public void CloseTileStetas()
     {

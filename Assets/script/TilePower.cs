@@ -19,10 +19,22 @@ public class TilePower : MonoBehaviour,IPointerClickHandler
     [SerializeField]
     private int _food = 1;
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPointerClick(PointerEventData pointerEventData)
     {
-        TileMN._TileMnObj.GetComponent<TileMN>().TilePlay(_playerTile, _contryID, _manpower,_economy,_food);
-        TileMN.SelectTile = this.gameObject;
+        switch (pointerEventData.pointerId)
+        {
+            case -1:
+                Debug.Log("Left Click");
+                TileMN._TileMnObj.GetComponent<TileMN>().TilePlay(_playerTile, _contryID, _manpower, _economy, _food);
+                TileMN.SelectTile = this.gameObject;
+                break;
+            case -2:
+                Debug.Log("Right Click");
+                break;
+            case -3:
+                Debug.Log("Middle Click");
+                break;
+        }
     }
     
 }

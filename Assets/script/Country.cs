@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 [CreateAssetMenu(
   fileName = "StatusData",
   menuName = "ScriptableObject/StatusData")]
@@ -16,8 +17,13 @@ public class status
 {
     public string Name => _name;
 
+    public Sprite CountyrCrest => _countyrCrest;
+
     public int Manpower => _manpower;
 
+    public int Economy => _economy;
+
+    public int Food => _food;
 
     [SerializeField]
     string _name;
@@ -29,12 +35,18 @@ public class status
     int _manpower = 0;
 
     [SerializeField]
-    int _Economy = 0;
+    int _economy = 0;
 
     [SerializeField]
     int _food = 0;
 
-    
+    [SerializeField]
+    Sprite _countyrCrest;
+
+
+
+
+
     public string NameChange(string name)
     {
         _name = name;
@@ -55,11 +67,11 @@ public class status
     {
         if (power == 9999)
         {
-            _Economy = 0;
+            _economy = 0;
         }
         else
-            _Economy += power;
-        return _Economy;
+            _economy += power;
+        return _economy;
     }
     public int FoodChage(int power)
     {
