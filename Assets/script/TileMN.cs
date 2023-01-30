@@ -39,11 +39,12 @@ public class TileMN : MonoBehaviour
     public List<GameObject> _PlyertileUI;
 
     [SerializeField] GameObject _tileStetasImage;
-    [SerializeField] List<Text> _tileMeny;
+    [SerializeField] public List<Text> _tileMeny;
     [SerializeField] Image _contryFlag;
     //ボタン
     [SerializeField] GameObject _nextButton;
     [SerializeField] GameObject _closeTileStetasButton;
+    [SerializeField] List<GameObject> _building;
 
     private string _tileContryName;
     private void Awake()
@@ -163,14 +164,22 @@ public class TileMN : MonoBehaviour
         _tileMeny[1].text = "経済力は" + tileeconomy;
         _tileMeny[2].text = "食料生産数は" + tileFood;
         _tileMeny[3].text = _tileContryName;
-        _nextButton.SetActive(false);
-
-        
-
+        //_nextButton.SetActive(false)
     }
     public void CloseTileStetas()
     {
         _tileStetasImage.SetActive(false);
     }
+    
+    public void BildButton()
+    {
+        if(SelectTile.GetComponent<TilePower>()._playerTile == true&& SelectTile.GetComponent<TilePower>()._TileBuild==false)
+        {
+            BuildinMN.BuildSrectTile = SelectTile;
+            foreach (var item in _building)
+            {
+                item.SetActive(true);
+            }
+        }
+    }
 }
-

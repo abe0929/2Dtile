@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class Country : ScriptableObject
 {
     [SerializeField] List<status> _contry = new();
-
     public List<status> Contry  => _contry;
 
 }

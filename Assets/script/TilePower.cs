@@ -9,15 +9,16 @@ public class TilePower : MonoBehaviour,IPointerClickHandler
     public int Food => _food;
 
     public bool _playerTile = false;
+    public bool _TileBuild = false;
 
     public int _contryID;
     
     [SerializeField]
     public int _manpower = 1;
     [SerializeField]
-    private int _economy = 1;
+    public int _economy = 1;
     [SerializeField]
-    private int _food = 1;
+    public int _food = 1;
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
@@ -27,6 +28,7 @@ public class TilePower : MonoBehaviour,IPointerClickHandler
                 Debug.Log("Left Click");
                 TileMN._TileMnObj.GetComponent<TileMN>().TilePlay(_playerTile, _contryID, _manpower, _economy, _food);
                 TileMN.SelectTile = this.gameObject;
+                Debug.Log($"{name}");
                 break;
             case -2:
                 Debug.Log("Right Click");

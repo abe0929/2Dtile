@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e85bdeb53c34e144b8b7a0fa1940bd8, type: 3}
+  m_Name: BuildingData
+  m_EditorClassIdentifier: 
+  _building:
+  - _name: "\u8FB2\u5712"
+    _needCost: 50
+    _needTurn: 3
+    _goldBuffl: 0
+    _foodBuffl: 50
+    _armyBuffl: 0
+    _buildImage: {fileID: 3579466402786467663, guid: 4c93078c0e9ae8c4488707811f5c53f5, type: 3}
+  - _name: "\u4EA4\u6613\u6240"
+    _needCost: 80
+    _needTurn: 5
+    _goldBuffl: 50
+    _foodBuffl: 0
+    _armyBuffl: 0
+    _buildImage: {fileID: 7978283284780297760, guid: a308397f3e90a6a4386ea5ecab50e305, type: 3}
+  - _name: "\u5FB4\u5175\u6240"
+    _needCost: 100
+    _needTurn: 5
+    _goldBuffl: 0
+    _foodBuffl: 0
+    _armyBuffl: 50
+    _buildImage: {fileID: 8735316612663031172, guid: f4d09cf5d22662c44abcb92eec63bb3a, type: 3}
