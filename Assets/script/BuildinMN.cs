@@ -13,12 +13,7 @@ public class BuildinMN : MonoBehaviour
     [SerializeField] TurnMN _turnMN;
     [SerializeField] GameObject hammerImage;
     private GameObject hunmerObj;
-    public static GameObject TestTilepower;
-
-    private void Start()
-    {
-        TestTilepower = hunmerObj;
-    }
+   
     public void BuildButtan(int num )
     {
         switch (num)

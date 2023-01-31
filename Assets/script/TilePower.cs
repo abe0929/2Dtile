@@ -38,7 +38,7 @@ public class TilePower : MonoBehaviour, IPointerClickHandler
                 break;
             case -2:
                 Debug.Log("Right Click");
-                SetStep(5);
+                SetStep(2);
                 break;
             case -3:
                 Debug.Log("Middle Click");
@@ -66,13 +66,13 @@ public class TilePower : MonoBehaviour, IPointerClickHandler
 
     public virtual void SetStep(int count)
     {
-        if (count <= 0 || nowStep > count)
+        if (count < 0 || nowStep > count)
         {
             return;
         }
         nowStep = count;
         print("ƒJƒEƒ“ƒg‚Í" + count);
-        Instantiate(BuildinMN.TestTilepower, this.transform.position, Quaternion.identity);
+        gameObject.GetComponent<Renderer>().material.color = Color.red;
 
         foreach (var tile in borderOnTiles)
         {
