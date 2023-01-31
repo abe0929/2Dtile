@@ -12,6 +12,8 @@ public class TilePower : MonoBehaviour,IPointerClickHandler
     public bool _TileBuild = false;
 
     public int _contryID;
+
+    [SerializeField] int _needMoveCost;
     
     [SerializeField]
     public int _manpower = 1;
