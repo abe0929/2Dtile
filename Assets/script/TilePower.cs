@@ -11,6 +11,8 @@ public class TilePower : MonoBehaviour, IPointerClickHandler
     public bool _playerTile = false;
     public bool _TileBuild = false;
 
+    public bool _armyRock = false;
+
     public int _contryID;
 
     public int needStep = 1;
@@ -38,7 +40,6 @@ public class TilePower : MonoBehaviour, IPointerClickHandler
                 break;
             case -2:
                 Debug.Log("Right Click");
-                SetStep(2);
                 break;
             case -3:
                 Debug.Log("Middle Click");
@@ -66,14 +67,16 @@ public class TilePower : MonoBehaviour, IPointerClickHandler
 
     public virtual void SetStep(int count)
     {
-        if (count < 0 || nowStep > count)
+        if (count < 0 || nowStep >= count )
         {
             return;
         }
         nowStep = count;
         print("カウントは" + count);
+        ArmyMN._moveTile.Add(this.gameObject);
+        print("配列追加後");
         gameObject.GetComponent<Renderer>().material.color = Color.red;
-
+        
         foreach (var tile in borderOnTiles)
         {
             var nextStepCount = count - tile.needStep;
