@@ -16,138 +16,138 @@ MonoBehaviour:
   - _name: "\u7E54\u7530"
     _colorcode: FFACAC
     _manpower: 4
-    _Economy: 4
+    _economy: 4
     _food: 4
     _countyrCrest: {fileID: 21300000, guid: 8eac6e0c97f6e4e47b0ae205c7f4d666, type: 3}
   - _name: "\u5357\u90E8"
     _colorcode: 00A2FF
     _manpower: 32
-    _Economy: 32
+    _economy: 32
     _food: 32
     _countyrCrest: {fileID: 21300000, guid: 607045f45e2d07541a068e82feb14126, type: 3}
   - _name: "\u4F0A\u9054"
     _colorcode: 7E4E00
     _manpower: 18
-    _Economy: 18
+    _economy: 18
     _food: 18
     _countyrCrest: {fileID: 21300000, guid: e1710a90a28d734449006e5461487800, type: 3}
   - _name: "\u6700\u4E0A"
     _colorcode: 55F8FF
     _manpower: 15
-    _Economy: 15
+    _economy: 15
     _food: 15
     _countyrCrest: {fileID: 21300000, guid: 4d26ba4d81f28ab47bbb64a708f2b15b, type: 3}
   - _name: "\u4E0A\u6749"
     _colorcode: 215CFF
     _manpower: 16
-    _Economy: 16
+    _economy: 16
     _food: 16
     _countyrCrest: {fileID: 21300000, guid: 607045f45e2d07541a068e82feb14126, type: 3}
   - _name: "\u4F50\u7AF9"
     _colorcode: FFA500
     _manpower: 6
-    _Economy: 6
+    _economy: 6
     _food: 6
     _countyrCrest: {fileID: 21300000, guid: 503708d75ee53c344b7f4dfe0cf2ea33, type: 3}
   - _name: "\u5317\u6761"
     _colorcode: D375FB
     _manpower: 15
-    _Economy: 15
+    _economy: 15
     _food: 15
     _countyrCrest: {fileID: 21300000, guid: a5b62a4b596955b44b804361347d502e, type: 3}
   - _name: "\u6B66\u7530"
     _colorcode: 3A9EFA
     _manpower: 19
-    _Economy: 19
+    _economy: 19
     _food: 19
     _countyrCrest: {fileID: 21300000, guid: 57e6ebbe4c469d34b8251987e73ae492, type: 3}
   - _name: "\u7560\u5C71"
     _colorcode: FF6800
     _manpower: 10
-    _Economy: 10
+    _economy: 10
     _food: 10
     _countyrCrest: {fileID: 21300000, guid: f8dddb59535a4e343be21fdf12a4e0db, type: 3}
   - _name: "\u4ECA\u5DDD"
     _colorcode: D4FF53
     _manpower: 12
-    _Economy: 12
+    _economy: 12
     _food: 12
     _countyrCrest: {fileID: 21300000, guid: e08f4dd57acf9ed45bd6afbf707c48c6, type: 3}
   - _name: "\u658E\u85E4"
     _colorcode: A8A8A8
     _manpower: 11
-    _Economy: 11
+    _economy: 11
     _food: 11
     _countyrCrest: {fileID: 21300000, guid: 46ca39896d852234ea8abab33e2794f3, type: 3}
   - _name: "\u671D\u5009"
     _colorcode: 746004
     _manpower: 5
-    _Economy: 5
+    _economy: 5
     _food: 5
     _countyrCrest: {fileID: 21300000, guid: ace15b8f1b67bef4fbad595efe8b086c, type: 3}
   - _name: "\u6D45\u4E95"
     _colorcode: 746004
     _manpower: 3
-    _Economy: 3
+    _economy: 3
     _food: 3
     _countyrCrest: {fileID: 21300000, guid: 526114457ccaca644b03c3e2655478ea, type: 3}
   - _name: "\u516D\u89D2"
     _colorcode: 216F07
     _manpower: 3
-    _Economy: 3
+    _economy: 3
     _food: 3
     _countyrCrest: {fileID: 21300000, guid: 26c9f8e9c820f9845a5ecccb3938f8c4, type: 3}
   - _name: "\u5317\u7560"
     _colorcode: 00EEFF
     _manpower: 4
-    _Economy: 4
+    _economy: 4
     _food: 4
     _countyrCrest: {fileID: 21300000, guid: b4cb50021351c194a9a692bdbb9e0288, type: 3}
   - _name: "\u8DB3\u5229"
     _colorcode: FF1B1B
     _manpower: 7
-    _Economy: 10
+    _economy: 10
     _food: 3
     _countyrCrest: {fileID: 21300000, guid: b27195578a4624d45b50de7a751a5bd5, type: 3}
   - _name: "\u677E\u6C38"
     _colorcode: FF8FF0
     _manpower: 6
-    _Economy: 6
+    _economy: 6
     _food: 6
     _countyrCrest: {fileID: 21300000, guid: bbe8b796f78fa7a438ac11020d70903e, type: 3}
   - _name: "\u4E09\u597D"
     _colorcode: 2557FF
     _manpower: 11
-    _Economy: 11
+    _economy: 11
     _food: 11
     _countyrCrest: {fileID: 21300000, guid: f44cbc29e6a354241baa511aa6e55a8e, type: 3}
   - _name: "\u9577\u5B97\u6211\u90E8"
     _colorcode: AC00FF
     _manpower: 12
-    _Economy: 12
+    _economy: 12
     _food: 12
     _countyrCrest: {fileID: 21300000, guid: a99b805b67332ad418e98f0bd5b4f56a, type: 3}
   - _name: "\u5C3C\u5B50"
     _colorcode: 846D4A
     _manpower: 14
-    _Economy: 14
+    _economy: 14
     _food: 14
     _countyrCrest: {fileID: 21300000, guid: c803e8fe521dd2a4ab4db838099debad, type: 3}
   - _name: "\u6BDB\u5229"
     _colorcode: FFEA00
     _manpower: 26
-    _Economy: 26
+    _economy: 26
     _food: 26
     _countyrCrest: {fileID: 21300000, guid: 04247fdd8b27a6245942d326c58090f2, type: 3}
   - _name: "\u5927\u53CB"
     _colorcode: FF7474
     _manpower: 24
-    _Economy: 24
+    _economy: 24
     _food: 24
     _countyrCrest: {fileID: 21300000, guid: 2b888cf903aef154f875a229055937e0, type: 3}
   - _name: "\u5CF6\u6D25"
     _colorcode: 84FDC9
     _manpower: 15
-    _Economy: 15
+    _economy: 15
     _food: 15
     _countyrCrest: {fileID: 21300000, guid: 1069d304a2e891a49ace0225ad9b436a, type: 3}

@@ -11,7 +11,7 @@ public class TilePower : MonoBehaviour, IPointerClickHandler
     public bool _playerTile = false;
     public bool _TileBuild = false;
 
-    public bool _armyRock = false;
+    public bool _armyMove = false;
 
     public int _contryID;
 
@@ -39,6 +39,11 @@ public class TilePower : MonoBehaviour, IPointerClickHandler
                 Debug.Log($"{name}");
                 break;
             case -2:
+                if(_armyMove == true)
+                {
+                    ArmyMove._selectMoveUnit.transform.position = this.gameObject.transform.position;
+                    ArmyMove._selectMoveUnit.GetComponent<ArmyMove>().MoveEnd(this.gameObject);
+                }
                 Debug.Log("Right Click");
                 break;
             case -3:
@@ -67,20 +72,25 @@ public class TilePower : MonoBehaviour, IPointerClickHandler
 
     public virtual void SetStep(int count)
     {
-        if (count < 0 || nowStep >= count )
+        if (count < 0 || nowStep >= count /*|| _armyRock == true*/)
         {
             return;
-        }
+        }    
         nowStep = count;
         print("カウントは" + count);
-        ArmyMN._moveTile.Add(this.gameObject);
-        print("配列追加後");
-        gameObject.GetComponent<Renderer>().material.color = Color.red;
-        
+        //gameObject.GetComponent<Renderer>().material.color = Color.white;
+        gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        _armyMove = true;
+        //_armyRock =true;
         foreach (var tile in borderOnTiles)
         {
             var nextStepCount = count - tile.needStep;
             tile.SetStep(nextStepCount);
         }
+        if (ArmyMN._moveTile.Contains(this.gameObject) == true)
+        {
+            return;//配列の中に同じオブジェクトがあったら返す
+        }
+        else ArmyMN._moveTile.Add(this.gameObject);
     }
 }

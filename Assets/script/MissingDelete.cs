@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEditor;
 public class MissingDelete
 {
@@ -28,3 +28,4 @@ public class MissingDelete
         Debug.Log("全プレハブ中のMissingなスクリプトの削除が完了しました");
     }
 }
+*/

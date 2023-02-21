@@ -24,6 +24,7 @@ public class status
 
     public int Food => _food;
 
+    public string Colorcode => _colorcode;
     [SerializeField]
     string _name;
 
