@@ -11,18 +11,19 @@ public class ArmyPopMN : MonoBehaviour
     @@@@‹|•º=1
             ‹R•º=2
           ‹|‹R•º=3
-             –³‚µ@4
+            –³‚µ=4
     */
     public Sprite[] _armyIDsprite;
-    public Image[] _battalionImage;
     public int[] _battalionID;//1‚©‚ç9‚Ü‚ÅŠ„‚è“–‚Ä
 
     [SerializeField] ArmyTeam _armyTeam;
-
+    public int _allHp;
+    public int _jumlahBatalyon;
     public int _armyAttack = 0;
     public int _armyHp = 0;
     public int _armyCost=0;
     public int _needManpoer=0;
+    public int _movePoint;
     public string _armyName;
 
     private void Start()
