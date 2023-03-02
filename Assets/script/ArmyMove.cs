@@ -11,13 +11,13 @@ public class ArmyMove : MonoBehaviour, IPointerClickHandler
     public int _movePoint;
     public GameObject _nowTile;
     private TilePower _tilePower;
-    [SerializeField] ArmyMN _armyMN;
+    [SerializeField] public ArmyMN _armyMN;
     [SerializeField] Country _country;
     bool _armyMove = true;
     bool _armyMoveEnd = false;
 
-    int _armyAttack;
-    int _armyHp;
+    public int _armyAttack;
+    public int _armyHp;
     public void OnPointerClick(PointerEventData pointerEventData)
     {
         print("soto");

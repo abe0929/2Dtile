@@ -72,10 +72,15 @@ public class TilePower : MonoBehaviour, IPointerClickHandler
 
     public virtual void SetStep(int count)
     {
-        if (count < 0 || nowStep >= count /*|| _armyRock == true*/)
+        if (count <= 0 || nowStep >= count /*|| _armyRock == true*/)
         {
             return;
-        }    
+        }
+        
+        if(_contryID != 0)//自分のタイルだけ移動できる。
+        {
+            return;
+        }
         nowStep = count;
         print("カウントは" + count);
         //gameObject.GetComponent<Renderer>().material.color = Color.white;

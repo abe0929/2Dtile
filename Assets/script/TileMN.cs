@@ -45,6 +45,7 @@ public class TileMN : MonoBehaviour
     [SerializeField] GameObject _nextButton;
     [SerializeField] GameObject _closeTileStetasButton;
     [SerializeField] List<GameObject> _building;
+    [SerializeField] GameObject _armyUI;
 
     private string _tileContryName;
     private void Awake()
@@ -181,5 +182,10 @@ public class TileMN : MonoBehaviour
                 item.SetActive(true);
             }
         }
+    }
+
+    public void ArmyButton()
+    {
+        _armyUI.SetActive(true);
     }
 }
