@@ -32,7 +32,7 @@ public class TurnMN : MonoBehaviour
                 _humerObj.RemoveAt(i);
                 _buildCompleteTurn.RemoveAt(i);
                 _buildCompleteTile.RemoveAt(i);
-                _buildID.RemoveAt(i);
+                _buildID.RemoveAt(i);                
             }
         }
         _turnresouce.TurnResouse();

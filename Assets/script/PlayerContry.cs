@@ -18,7 +18,7 @@ public class PlayerContry : MonoBehaviour
     private int _playerPlusFood;
     public int _plusFoodBuff = 100;
 
-    private int _PlayerHaveArmyResources;
+    public int _PlayerHaveArmyResources;
     private int _playerPlusArmyResources;
     public int _plusArmyBuff = 100;
 
